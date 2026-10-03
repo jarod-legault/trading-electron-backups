@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy — Trading Electron Backups</title>
+<style>body{max-width:44rem;margin:4rem auto;padding:0 1.5rem;font:18px/1.6 system-ui,sans-serif;color:#202124}a{color:#1756a9}</style>
+<main>
+<h1>Privacy policy</h1>
+<p>Trading Electron Backups · Updated October 3, 2026</p>
+<p>This personal tool is operated by Jarod Legault to back up and recover databases on the owner's computers.</p>
+<h2>Google Drive access and use</h2>
+<p>The tool uses Google OAuth authorization through rclone to access the owner's Drive. Its configured Drive permission can permit access beyond the backup folder; the backup workflow uses the trading-electron-backups folder to create, list, read, restore, and remove encrypted backup repository files. It reads file metadata and repository contents as needed for those operations.</p>
+<h2>Storage and protection</h2>
+<p>Restic encrypts database snapshots and their manifests before uploading them to Google Drive. Local snapshots remain on the owner's computers. OAuth client credentials and access/refresh tokens are stored locally in configuration files. The separate Restic encryption password is stored locally outside the source repository. These credentials are not published on this website.</p>
+<h2>Sharing</h2>
+<p>The backup tool does not sell Google user data, use it for advertising, or share it with unrelated third parties. Google processes the uploaded encrypted files to provide Drive storage. Authorized backup and restore copies may be transferred between the owner's computers.</p>
+<h2>Retention and deletion</h2>
+<p>Backup retention is controlled by the owner's local and Restic retention settings. The owner can delete backups using the backup tools and revoke OAuth authorization in Google account settings. Revoking access prevents subsequent Drive operations but does not delete existing backups or local copies.</p>
+<p>The tool's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+<p>Contact: <a href="mailto:jarod.legault@gmail.com">jarod.legault@gmail.com</a></p>
+<p><a href="index.html">Back to homepage</a></p>
+</main>
+</html>
